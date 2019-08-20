@@ -9,9 +9,13 @@
     tags:
       - osp.smoke
   - name: Curl website
-
+    command: curl "http://frontend1.{{ ANSIBLE_ADVANCE_GUID }}.example.opentlc.com"
+    register: webpage
+  - debug: var=webpage.stdout
   - name: Fail if 'Ansible has done its job' is not in the page content
     fail:
     when: "'Ansible has done its job' not in webpage.results[0].content"
     tags:
       - osp.smoke
+  - name: Success
+    debug: msg="Congrats Yours HW Assignment is completed"
