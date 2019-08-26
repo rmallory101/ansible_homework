@@ -14,6 +14,8 @@ instance_group_name: osp
 workflow_template_name: cicd_workflow
 job_template_name_osp_instances: "Provision QA Env"
 osp_instances_playbook: site-osp-instances.yml
+scm_type: "git"
+scm_url: "https://github.com/rmallory101/ansible_homework.git"
 group_name: workstation
 host_name: workstation-{{OSP_GUID}}.rhpds.opentlc.com
 job_template_name_3tier_app: "3tier app deployment on QA Env"
