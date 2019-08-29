@@ -1,0 +1,6 @@
+---
+# tasks file for roles/aws-prod
+- include_tasks: aws_provision.yml
+- include_tasks: aws_status.yml
+- include_tasks: aws_creds.yml
+- include_tasks: site-smoketest-aws.yml
