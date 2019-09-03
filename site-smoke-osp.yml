@@ -9,7 +9,7 @@
     tags:
       - osp.smoke
   - name: Curl website
-    command: curl "http://frontend1.{{ ANSIBLE_ADVANCE_GUID }}.example.opentlc.com"
+    command: curl "http://frontend1.{{ OSP_GUID }}.example.opentlc.com"
     register: webpage
   - debug: var=webpage.stdout
   - name: Fail if 'Ansible has done its job' is not in the page content
