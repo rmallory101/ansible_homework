@@ -1,3 +1,7 @@
+ ---
+- hosts: workstation
+  become: true
+  gather_facts: false
   - name: Create a server instance
     os_server:
       cloud: ospcloud
