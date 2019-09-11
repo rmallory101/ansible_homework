@@ -5,4 +5,4 @@
     flavor_name: m1.small
     webserver_group: webservers
     database_group: databaseservers
-    deployment: qa
+    deployment: test-servers
