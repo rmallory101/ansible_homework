@@ -1,6 +1,5 @@
 ---
 
-3
 - name: Create new server instances and attaches them a network and passes metadata to the instance
   os_server:
     cloud: ospcloud
