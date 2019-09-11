@@ -1,3 +1,5 @@
+# Build initial templates and variable reference
+# Used for login to CFME
 - name: Generate var file for order_svc.sh script
   template:
     src: aws_jq_vars.yml
@@ -12,7 +14,6 @@
   copy:
     src: "{{path_to_opentlc_key}}"
     dest: /root/secret.pem
-
 
 - name: Copy inventory vars
   copy:
